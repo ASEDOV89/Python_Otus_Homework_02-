@@ -3,15 +3,7 @@
 Функции и структуры данных
 """
 
-# from typing import List, Any
-
 def power_numbers(numbers):
-    # """
-    # функция, которая принимает N целых чисел,
-    # и возвращает список квадратов этих чисел
-    # >>> power_numbers(1, 2, 5, 7)
-    # <<< [1, 4, 25, 49]
-    # """
     results = []
     for num in numbers:
         if isinstance(num, list):
@@ -20,7 +12,7 @@ def power_numbers(numbers):
             results.append(num ** 2)
     return results
 
-numbers = [1, 2, 5, 7]
+numbers = [1, 2, 5, 7, 9]
 
 print(power_numbers(numbers))
 
@@ -42,16 +34,6 @@ def is_prime(num):
 
 
 def filter_numbers(numbers, filter_type):
-    # """
-    # функция, которая на вход принимает список из целых чисел,
-    # и возвращает только чётные/нечётные/простые числа
-    # (выбор производится передачей дополнительного аргумента)
-    #
-    # >>> filter_numbers([1, 2, 3], ODD)
-    # <<< [1, 3]
-    # >>> filter_numbers([2, 3, 4, 5], EVEN)
-    # <<< [2, 4]
-    # """
     if filter_type == ODD:
         return list(filter(lambda x: x % 2 != 0, numbers))
     elif filter_type == EVEN:
