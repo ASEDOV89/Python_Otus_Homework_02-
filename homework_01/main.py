@@ -3,7 +3,6 @@
 Функции и структуры данных
 """
 
-
 def power_numbers(numbers):
     results = []
     for num in numbers:
