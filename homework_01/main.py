@@ -3,6 +3,7 @@
 Функции и структуры данных
 """
 
+
 def power_numbers(numbers):
     results = []
     for num in numbers:
@@ -12,19 +13,17 @@ def power_numbers(numbers):
             results.append(num ** 2)
     return results
 
-numbers = [1, 2, 5, 7, 9]
+numbers = [1, 2, 5, 7]
 
 print(power_numbers(numbers))
-
-import math
 
 # filter types
 ODD = 'odd'
 EVEN = 'even'
 PRIME = 'prime'
 
-
 def is_prime(num):
+    import math
     if num < 2:
         return False
     for i in range(2, int(math.sqrt(num)) + 1):
@@ -32,14 +31,14 @@ def is_prime(num):
             return False
     return True
 
-
-def filter_numbers(numbers, filter_type):
+def filter_numbers(num, filter_type):
     if filter_type == ODD:
-        return list(filter(lambda x: x % 2 != 0, numbers))
+        return list(filter(lambda x: x % 2 != 0, num))
     elif filter_type == EVEN:
-        return list(filter(lambda x: x % 2 == 0, numbers))
+        return list(filter(lambda x: x % 2 == 0, num))
     elif filter_type == PRIME:
-        return list(filter(is_prime, numbers))
+        return list(filter(is_prime, num))
+
 
 num_odd = [1, 2, 3]
 num_even = [2, 3, 4, 5]
