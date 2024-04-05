@@ -12,14 +12,16 @@ def power_numbers(numbers):
             results.append(num ** 2)
     return results
 
-numbers = [1, 2, 5, 7]
+
+numbers: list[int] = [1, 2, 5, 7]
 
 print(power_numbers(numbers))
 
 # filter types
-ODD = 'odd'
-EVEN = 'even'
-PRIME = 'prime'
+ODD: str = 'odd'
+EVEN: str = 'even'
+PRIME: str = 'prime'
+
 
 def is_prime(num):
     import math
@@ -29,6 +31,7 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
+
 
 def filter_numbers(num, filter_type):
     if filter_type == ODD:
