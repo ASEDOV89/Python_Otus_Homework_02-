@@ -42,7 +42,7 @@ def filter_numbers(num, filter_type):
         return list(filter(is_prime, num))
 
 
-num_odd = [1, 2, 3]
+num_odd = [1, 2, 3, 4]
 num_even = [2, 3, 4, 5]
 num_prime = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
