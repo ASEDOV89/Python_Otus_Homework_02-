@@ -12,7 +12,6 @@ ODD: str = 'odd'
 EVEN: str = 'even'
 PRIME: str = 'prime'
 
-
 def is_prime(num):
     import math
     if num < 2:
