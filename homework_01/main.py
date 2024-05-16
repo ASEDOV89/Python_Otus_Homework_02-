@@ -1,11 +1,14 @@
-def power_numbers(numbers):
-    results = []
-    for num in numbers:
-        if isinstance(num, list):
-            results.extend(power_numbers(num * +2))
-        else:
-            results.append(num ** 2)
-    return results
+# def power_numbers(numbers):
+#     results = []
+#     for num in numbers:
+#         if isinstance(num, list):
+#             results.extend(power_numbers(num * +2))
+#         else:
+#             results.append(num ** 2)
+#     return results
+
+def power_numbers(*args):
+    return [x**2 for x in args]
 
 # filter types
 ODD: str = 'odd'
@@ -30,7 +33,6 @@ def filter_numbers(num, filter_type):
         return list(filter(is_prime, num))
 
 if __name__ == "__main__":
-    numbers: list[int] = [1, 2, 5, 7]
-    num_odd = [1, 2, 3, 4]
-    num_even = [1, 2, 3, 4, 5]
-    num_prime = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    num_odd: list[int] = [1, 2, 3, 4]
+    num_even: list[int] = [1, 2, 3, 4, 5]
+    num_prime: list[int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
