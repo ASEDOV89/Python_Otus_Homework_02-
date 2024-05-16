@@ -30,13 +30,8 @@ def filter_numbers(num, filter_type):
     elif filter_type == PRIME:
         return list(filter(is_prime, num))
 
-numbers: list[int] = [1, 2, 5, 7]
-print(power_numbers(numbers))
-
 if __name__ == "__main__":
+    numbers: list[int] = [1, 2, 5, 7]
     num_odd = [1, 2, 3, 4]
     num_even = [1, 2, 3, 4, 5]
     num_prime = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-    print(filter_numbers(num_odd, ODD))
-    print(filter_numbers(num_even, EVEN))
-    print(filter_numbers(num_prime, PRIME))
