@@ -21,7 +21,6 @@ def is_prime(num):
             return False
     return True
 
-
 def filter_numbers(num, filter_type):
     if filter_type == ODD:
         return list(filter(lambda x: x % 2 != 0, num))
